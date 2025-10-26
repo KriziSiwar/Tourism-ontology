@@ -21,7 +21,7 @@ Ce projet utilise une **ontologie OWL** pour modéliser les données du tourisme
   - [Apache Jena Fuseki](https://jena.apache.org/documentation/fuseki2/) (base de données RDF)
 
 - **Front-end** :
-  - HTML5, CSS3, JavaScript,ReactJs
+  - HTML5, CSS3, JavaScript, ReactJs
   - [Bootstrap 5](https://getbootstrap.com/) (pour le design responsive)
 
 - **Ontologie** :
