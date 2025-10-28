@@ -1,0 +1,697 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme/"
+     xml:base="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:novagrptourisme="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#accompagne -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#accompagne">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Guide"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Touriste"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#achète -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#achète"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#associeEmpreinte -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#associeEmpreinte">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Transport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EmpreinteCarbone"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#logerDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#logerDans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#organise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#organise">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Guide"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#participeA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#participeA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#possedeCertification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#possedeCertification">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#CertificationEco"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#propose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#propose">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ProduitLocal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#seDerouleDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#seDerouleDans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Destination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#situeDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#situeDans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Destination"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#utiliseEnergie -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#utiliseEnergie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#RestaurantEco"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Transport"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EnergieRenouvelable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#utiliseTransport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#utiliseTransport">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Transport"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#vend -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#vend">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ProduitLocal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Touriste"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#visite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#visite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Touriste"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ZoneNaturelle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#accessibilite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#accessibilite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ZoneNaturelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#capacite -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#capacite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Transport"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#certifie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#certifie">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Restaurant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#contact -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#contact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Guide"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#dateDebut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#dateDebut">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#dateFin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#dateFin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#description">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Restaurant"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ZoneNaturelle"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#impactCarbone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#impactCarbone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#langue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#langue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Guide"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#localisation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#localisation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Destination"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ZoneNaturelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#niveauCarbone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#niveauCarbone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EmpreinteCarbone"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#nom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#nom">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#note -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#note">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#prix -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#prix">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ProduitLocal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Transport"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#productionAnnuelle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#productionAnnuelle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EnergieRenouvelable"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ActiviteEcologique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ActiviteEcologique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Biomasse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Biomasse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EnergieRenouvelable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Camping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Camping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#CertificationEco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#CertificationEco"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Destination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Destination"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EcoTransport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EcoTransport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Transport"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EmpreinteCarbone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EmpreinteCarbone"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EmpreinteCarboneFaible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EmpreinteCarboneFaible">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EmpreinteCarbone"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EnergieRenouvelable -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EnergieRenouvelable"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Exposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Exposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Festival -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Festival">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Guide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Guide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hotel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hotel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#MaisonHote -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#MaisonHote">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Hébergement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ParcNational -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ParcNational">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ZoneNaturelle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ProduitArtisanal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ProduitArtisanal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ProduitLocal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ProduitLocal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ProduitLocal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ProduitLocalBio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ProduitLocalBio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ProduitLocal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Randonnee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Randonnee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ReserveNaturelle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ReserveNaturelle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ZoneNaturelle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Restaurant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#RestaurantEco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#RestaurantEco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Restaurant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Solaire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Solaire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EnergieRenouvelable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Touriste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Touriste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Transport"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#User"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ZoneNaturelle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ZoneNaturelle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ville -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#ville">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Destination"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Empreinte_carbone_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Empreinte_carbone_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EmpreinteCarbone"/>
+        <novagrptourisme:niveauCarbone rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.5</novagrptourisme:niveauCarbone>
+        <novagrptourisme:nom>Empreinte carbone d'un hôtel</novagrptourisme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#activite1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#activite1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Activite"/>
+        <novagrptourisme:accessibilite rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</novagrptourisme:accessibilite>
+        <novagrptourisme:capacite rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</novagrptourisme:capacite>
+        <novagrptourisme:description>Découverte culturelle et historique</novagrptourisme:description>
+        <novagrptourisme:nom>Visite de la Médina</novagrptourisme:nom>
+        <novagrptourisme:prix rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</novagrptourisme:prix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#certificat1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#certificat1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#CertificationEco"/>
+        <novagrptourisme:description>Certificat attribué aux établissements respectant des normes strictes en matière de durabilité et de gestion environnementale.</novagrptourisme:description>
+        <novagrptourisme:nom>Green Key</novagrptourisme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#distination1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#distination1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Destination"/>
+        <novagrptourisme:localisation>tunis</novagrptourisme:localisation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#distination2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#distination2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Destination"/>
+        <novagrptourisme:localisation>jerba</novagrptourisme:localisation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#distination3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#distination3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Destination"/>
+        <rdfs:label xml:lang="x-default">kairoun</rdfs:label>
+        <novagrptourisme:localisation>kairoun</novagrptourisme:localisation>
+        <novagrptourisme:nom>kairoun</novagrptourisme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#energie1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#energie1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#EnergieRenouvelable"/>
+        <novagrptourisme:nom>Énergie solaire</novagrptourisme:nom>
+        <novagrptourisme:productionAnnuelle rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</novagrptourisme:productionAnnuelle>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#evenement1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#evenement1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement"/>
+        <novagrptourisme:capacite rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</novagrptourisme:capacite>
+        <novagrptourisme:dateDebut rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T18:00:00</novagrptourisme:dateDebut>
+        <novagrptourisme:dateFin rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-05T23:00:00</novagrptourisme:dateFin>
+        <novagrptourisme:nom>Festival de musique</novagrptourisme:nom>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#evenement1"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#seDerouleDans"/>
+        <owl:targetIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#distination2"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#evenement2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#evenement2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Événement"/>
+        <novagrptourisme:capacite rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</novagrptourisme:capacite>
+        <novagrptourisme:dateDebut rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T18:00:00</novagrptourisme:dateDebut>
+        <novagrptourisme:dateFin rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-12-01T18:00:00</novagrptourisme:dateFin>
+        <novagrptourisme:nom>protection de l’environnement</novagrptourisme:nom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#guide1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#guide1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#Guide"/>
+        <novagrptourisme:contact rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21658589465</novagrptourisme:contact>
+        <novagrptourisme:langue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25</novagrptourisme:langue>
+        <novagrptourisme:langue>francais</novagrptourisme:langue>
+        <novagrptourisme:nom>youssef</novagrptourisme:nom>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagrptourisme#guide1"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/user/ontologies/2025/9/novagr
